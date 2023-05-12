@@ -124,8 +124,8 @@ const searchBar = document.getElementById('search-bar');
 
 function drawCanvas(data){
 // Sizing - independent
-let tw = 1000
-let th = 800
+let tw = 1500
+let th = 1000
 let numX = 4
 // Sizing - DEPENDENT
 let numY = 12/numX
@@ -173,7 +173,7 @@ for (let i = 0; i < 12; i++) {
     //var saturation = data[String(i+1)] / (Math.max(...Object.values(data))) * 100; // Convert value to percentage of max value
     //var color = Raphael.hsl('#ff0', saturation, 50); // Use HSL color model to adjust lightness
     var myColor = d3.scaleLinear()
-    .range(['#ffffff','#7f0000'])
+    .range(['#ffffff','#c92a2a'])
     .domain([0,100]);
     var color = myColor(String(data['children'][i+1]['value']) /maxVal *100)
 
