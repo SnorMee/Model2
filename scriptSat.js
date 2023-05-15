@@ -125,10 +125,11 @@ const searchBar = document.getElementById('search-bar');
 function drawCanvas(data){
 // Sizing - independent
 let tw = 1000
-let th = 800
+//let th = 800
 let numX = 4
 // Sizing - DEPENDENT
 let numY = 12/numX
+let th = tw/numX*numY
 var paper = Raphael("canvas", tw+10 , th+10);
 let x = 10
 let x0 = x
